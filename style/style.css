@@ -40,7 +40,7 @@ section{
 	border-radius: 10px;
 	box-shadow: 0 0 5px 5px #f0f0f0;
 	text-align: left;
-	transition: all .3s ease-in;
+	transition: all .1s ease-in;
 
 }
 section:hover{
@@ -72,13 +72,5 @@ h2{
 b{
 	font-weight: 600;
 }
-#entities{
-	display: grid;
-	grid-template-columns: auto auto;
-	width:50%;
-	margin:auto; 
-	align-items: center;
-}
-
 
 
