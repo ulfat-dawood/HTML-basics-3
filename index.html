@@ -22,23 +22,126 @@
                     <li>Have a closing Tag.</li>
                 </ol>
                 <code>E.g. &lt;p&gt; &lt;/p&gt;   &lt;ul&gt; &lt;/ul&gt; </code>
-
-            <h2>Unaired Tags</h2>
+        </section>
+        <section>
+                <h2>Unaired Tags</h2>
                 <ul>
                     <li>Have an opening tag.</li>
                     <li>No content / children tags.</li>
                     <li>No closing tag.</li>
                 </ul>
             <code>E.g. &lt;br&gt;   &lt;hr&gt;</code>
-
-            <h2>Self-closing Tags</h2>
+        </section>
+        <section>
+                <h2>Self-closing Tags</h2>
                 <ul>
                     <li>Only one tag that closes itself.</li>
                     <li>No content / children tags.</li>
-                    <li>Requires attributes.</li>
+                    <li>Require attributes.    </li>
                 </ul>
                 <code>E.g. &lt;img src="img.png" /&gt;  &nbsp; &nbsp;  &lt;input type="text" /&gt; </code>
+        </section>
 
+        <h1 class="title">Media Tags</h1>
+        <section>
+            <h2>Image Tag</h2>
+            <p>Self-closing tag  <code>&lt;img/&gt;</code></p>
+            Attributes:
+            <ul>
+                <li>src</li>
+                <li>alt</li>
+                <li>height/width in pixels</li>
+            </ul>
+            <img src="./img/img-icon.png" alt="icon for an image" height="200" width="200">
+        </section>
+        <section>
+            <h2>Audio Tag </h2>
+            <p>Paired Tag <code>&lt;audio&gt;&lt;audio/&gt;</code> Has one or multiple <code>&lt;source&gt;</code> tag</p>
+            <code>&lt;audio&gt;</code> attributes:
+            <ul>
+                <li>controls</li>
+                <li>autoplay</li>
+                <li>loop</li>
+                <li>muted</li>
+            </ul>
+
+            <p></p>
+            <p><code>&lt;source&gt;</code> attributes:</p>
+            <ul>
+                <li>src</li>
+                <li>type</li>
+            </ul>
+
+            <audio controls>
+                <source src="media/hp-theme.mp3" type="audio/mp3">
+            </audio>
+        </section>
+
+        <section>
+                <h2>Video Tag </h2>
+                <p>Paired Tag <code>&lt;video&gt;&lt;video/&gt;</code> Has one or multiple <code>&lt;source&gt;</code> tag</p>
+                <code>&lt;video&gt;</code> attributes:
+                <ul>
+                    <li>width</li>
+                    <li>height</li>
+                    <li>controls</li>
+                    <li>autoplay</li>
+                    <li>loop</li>
+                    <li>muted</li>
+                </ul>
+    
+                <p></p>
+                <p><code>&lt;source&gt;</code> attributes:</p>
+                <ul>
+                    <li>src</li>
+                    <li>type</li>
+                </ul>
+    
+                <video width="300" controls>
+                    <source src="media/video.mp4" type="audio/mp3">
+                </video>
+                <!-- Video by Kelly Lacy from Pexels -->
+                
+        </section>
+
+        <h1 class="title">Tables</h1>
+        <section>
+            <table border="1" style="border-collapse: collapse;" >
+                <caption><h2>&lt;table&gt;&lt;/table&gt;</h2></caption>
+                
+                <thead>
+                    <tr>
+                        <th>#</th>  <th>Semantic Tags</th>  <th>row</th>  <th>cell</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr>
+                        <td>1</td>  <td colspan="3">&lt;caption&gt;</td>  
+                    </tr>
+
+                    <tr>
+                        <td>2</td>  <td>&lt;thead&gt;</td>  <td>&lt;th&gt;</td>  <td>&lt;td&gt;</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>  <td>&lt;tbody&gt;</td>  <td>&lt;tr&gt;</td>  <td>&lt;td&gt;</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td>4</td>  <td>&lt;tfoot&gt;</td>  <td>&lt;tr&gt;</td>  <td>&lt;td&gt;</td>
+                    </tr>
+                </tfoot>
+                <!-- Grouping columns and styling them  -->
+                <colgroup>
+                    <col span="1" style="background: #abced4">
+                    <col span="3" style="background: #f0f0f0">
+                </colgroup>
+
+                <p><code>&lt;td&gt;</code> attributes:</p>
+            </table>
         </section>
     </div>
 

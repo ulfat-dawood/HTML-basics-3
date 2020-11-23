@@ -72,5 +72,8 @@ h2{
 b{
 	font-weight: 600;
 }
+th, td{
+	padding:.5em;
+}
 
 
